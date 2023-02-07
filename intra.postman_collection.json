@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "68d48654-c4b2-43e9-81eb-2acfbdc2c619",
+		"name": "intra",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14216294"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/intra/accounts/111",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/intra/accounts/111",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"intra",
+						"accounts",
+						"111"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/intra/accounts/111/balance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/intra/accounts/111/balance",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"intra",
+						"accounts",
+						"111",
+						"balance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/intra/statements",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"creditId\": 111,\n        \"debitId\": 222,\n        \"amount\": 0.1\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/intra/statements",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"intra",
+						"statements"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/intra/accounts/111/statements/mini",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/intra/accounts/111/statements/mini",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"intra",
+						"accounts",
+						"111",
+						"statements",
+						"mini"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
